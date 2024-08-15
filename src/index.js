@@ -8,7 +8,7 @@ export function getAnchor(event) {
   let composedPath = event.composedPath();
 
   for (let element of composedPath) {
-    if (element instanceof HTMLAnchorElement) {
+    if (element.nodeName.toUpperCase() === 'A') {
       return element;
     }
   }
@@ -47,12 +47,12 @@ export function shouldHandle(href, element, event, ignore = []) {
    * the user leave the site.
    * https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types
    */
-  if (element.rel === "external") return false;
+  if (element.rel === 'external') return false;
 
   /**
    * Clicking <a href="..." download> should open up browser's download dialog
    */
-  if (element.hasAttribute("download")) return false;
+  if (element.hasAttribute('download')) return false;
 
   /**
    * If the click is not a "left click" we don't want to intercept the event.
@@ -109,9 +109,9 @@ export function shouldHandle(href, element, event, ignore = []) {
    * the Ember router will skip the transition in this case because the path
    * is the same.
    */
-  let [prehash, posthash] = url.href.split("#");
+  let [prehash, posthash] = url.href.split('#');
 
-  if (posthash !== undefined && prehash === location.href.split("#")[0]) {
+  if (posthash !== undefined && prehash === location.href.split('#')[0]) {
     return false;
   }
 
