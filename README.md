@@ -14,7 +14,7 @@ pnpm add should-handle-link
 ## Usage
 
 ```js
-import { shouldHandle } from 'should-handle-link';
+import { shouldHandle, getAnchor } from 'should-handle-link';
 
 function handler(event) {
     let anchor = getAnchor(event);
@@ -31,17 +31,6 @@ function handler(event) {
 }
 
 document.body.addEventListener('click', handler);
-
-function getAnchor(event) {
-  let composedPath = event.composedPath();
-
-  for (let element of composedPath) {
-    if (element instanceof HTMLAnchorElement) {
-      return element;
-    }
-  }
-}
-
 ```
 
 ## License 
