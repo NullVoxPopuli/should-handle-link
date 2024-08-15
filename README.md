@@ -43,3 +43,12 @@ function getAnchor(event) {
 }
 
 ```
+
+## License 
+
+MIT
+
+## Related projects 
+
+- [internal-nav-helper](https://github.com/HenrikJoreteg/internal-nav-helper)
+    This porject has narrower scope and doesn't cover as many use cases (and is also outdated).
