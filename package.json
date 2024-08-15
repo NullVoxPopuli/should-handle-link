@@ -13,14 +13,46 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:NullVoxPopuli/should-handle-link.git"
+    "url": "git+https://github.com/NullVoxPopuli/should-handle-link.git"
+  },
+  "scripts": {
+    "lint": "concurrently 'pnpm:lint:*(!fix)' --names 'lint:'",
+    "lint:fix": "concurrently 'pnpm:lint:*:fix' --names 'fix:'",
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix",
+    "lint:types": "tsc --noEmit --emitDeclarationOnly false",
+    "lint:package": "publint .",
+    "lint:published-types": "attw . --pack --ignore-rules cjs-resolves-to-esm"
   },
   "license": "MIT",
   "author": "NullVoxPopuli",
   "type": "module",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "types": "src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "src"
+  ],
   "devDependencies": {
-    "release-plan": "^0.9.0"
+    "@arethetypeswrong/cli": "^0.15.4",
+    "@babel/eslint-parser": "^7.25.1",
+    "@nullvoxpopuli/eslint-configs": "^4.2.0",
+    "@tsconfig/ember": "^3.0.8",
+    "@typescript-eslint/eslint-plugin": "^8.1.0",
+    "@typescript-eslint/parser": "^8.1.0",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.0.0",
+    "eslint-plugin-ember": "^12.1.1",
+    "eslint-plugin-qunit": "^8.1.1",
+    "prettier": "^3.3.3",
+    "publint": "^0.2.10",
+    "release-plan": "^0.9.0",
+    "typescript": "^5.5.4"
   }
 }
