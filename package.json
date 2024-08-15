@@ -1,0 +1,11 @@
+{
+  "name": "should-handle-link",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "keywords": ["link", "handle", "navigation", "spa", "mpa", "routing", "router"],
+  "author": "NullVoxPopuli",
+  "license": "MIT"
+}
