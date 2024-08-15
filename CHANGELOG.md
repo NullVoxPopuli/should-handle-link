@@ -2,6 +2,17 @@
 
 ## Release (2024-08-15)
 
+should-handle-link 1.2.0 (minor)
+
+#### :rocket: Enhancement
+* `should-handle-link`
+  * [#6](https://github.com/NullVoxPopuli/should-handle-link/pull/6) Add getAnchor ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### Committers: 1
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
+## Release (2024-08-15)
+
 should-handle-link 1.1.0 (minor)
 
 #### :rocket: Enhancement
