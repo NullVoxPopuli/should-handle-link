@@ -2,24 +2,16 @@
   "solution": {
     "should-handle-link": {
       "impact": "minor",
-      "oldVersion": "1.0.0",
-      "newVersion": "1.1.0",
+      "oldVersion": "1.1.0",
+      "newVersion": "1.2.0",
       "constraints": [
         {
           "impact": "minor",
           "reason": "Appears in changelog section :rocket: Enhancement"
-        },
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :memo: Documentation"
-        },
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
         }
       ],
       "pkgJSONPath": "./package.json"
     }
   },
-  "description": "## Release (2024-08-15)\n\nshould-handle-link 1.1.0 (minor)\n\n#### :rocket: Enhancement\n* `should-handle-link`\n  * [#1](https://github.com/NullVoxPopuli/should-handle-link/pull/1) exclude \"download\" & rel=\"external\" ([@huygn](https://github.com/huygn))\n\n#### :memo: Documentation\n* `should-handle-link`\n  * [#3](https://github.com/NullVoxPopuli/should-handle-link/pull/3) Update README with related projects and license ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n  * [#4](https://github.com/NullVoxPopuli/should-handle-link/pull/4) Create LICENSE (MIT) ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### :house: Internal\n* `should-handle-link`\n  * [#2](https://github.com/NullVoxPopuli/should-handle-link/pull/2) Setup release-plan ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 2\n- Huy Giang ([@huygn](https://github.com/huygn))\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
+  "description": "## Release (2024-08-15)\n\nshould-handle-link 1.2.0 (minor)\n\n#### :rocket: Enhancement\n* `should-handle-link`\n  * [#6](https://github.com/NullVoxPopuli/should-handle-link/pull/6) Add getAnchor ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 1\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
 }
