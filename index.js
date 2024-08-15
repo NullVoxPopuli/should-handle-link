@@ -26,6 +26,19 @@ export function shouldHandle(href, element, event, ignore = []) {
   if (element.target) return false;
 
   /**
+   * rel="external" indicates that the hyperlink leads to a resource outside 
+   * the site of the current page; that is, following the link will make 
+   * the user leave the site.
+   * https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types
+   */
+  if (element.rel === "external") return false;
+
+  /**
+   * Clicking <a href="..." download> should open up browser's download dialog
+   */
+  if (element.hasAttribute("download")) return false;
+
+  /**
    * If the click is not a "left click" we don't want to intercept the event.
    * This allows folks to
    * - middle click (usually open the link in a new tab)
