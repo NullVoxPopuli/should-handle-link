@@ -1,3 +1,19 @@
+export function getAnchor(event) {
+  /**
+   * Using composed path in case the link is removed from the DOM
+   * before the event handler evaluates.
+   *
+   * (Which can happen in the event of links in dropdowns that auto-close)
+   */
+  let composedPath = event.composedPath();
+
+  for (let element of composedPath) {
+    if (element instanceof HTMLAnchorElement) {
+      return element;
+    }
+  }
+}
+
 /**
  * Returns `true` if the link should be handled by the Ember router
  * Returns `false` if the link should be handled by the browser
@@ -26,8 +42,8 @@ export function shouldHandle(href, element, event, ignore = []) {
   if (element.target) return false;
 
   /**
-   * rel="external" indicates that the hyperlink leads to a resource outside 
-   * the site of the current page; that is, following the link will make 
+   * rel="external" indicates that the hyperlink leads to a resource outside
+   * the site of the current page; that is, following the link will make
    * the user leave the site.
    * https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types
    */
