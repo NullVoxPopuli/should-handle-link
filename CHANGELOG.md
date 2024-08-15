@@ -2,6 +2,21 @@
 
 ## Release (2024-08-15)
 
+should-handle-link 1.2.1 (patch)
+
+#### :bug: Bug Fix
+* `should-handle-link`
+  * [#10](https://github.com/NullVoxPopuli/should-handle-link/pull/10) Support <a> within SVG Documents ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### :house: Internal
+* `should-handle-link`
+  * [#8](https://github.com/NullVoxPopuli/should-handle-link/pull/8) Add CI ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### Committers: 1
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
+## Release (2024-08-15)
+
 should-handle-link 1.2.0 (minor)
 
 #### :rocket: Enhancement
