@@ -2,10 +2,25 @@
   "name": "should-handle-link",
   "version": "1.0.0",
   "description": "",
+  "keywords": [
+    "link",
+    "handle",
+    "navigation",
+    "spa",
+    "mpa",
+    "routing",
+    "router"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:NullVoxPopuli/should-handle-link.git"
+  },
+  "license": "MIT",
+  "author": "NullVoxPopuli",
   "type": "module",
   "main": "index.js",
   "types": "index.d.ts",
-  "keywords": ["link", "handle", "navigation", "spa", "mpa", "routing", "router"],
-  "author": "NullVoxPopuli",
-  "license": "MIT"
+  "devDependencies": {
+    "release-plan": "^0.9.0"
+  }
 }
