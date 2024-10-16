@@ -2,20 +2,16 @@
   "solution": {
     "should-handle-link": {
       "impact": "patch",
-      "oldVersion": "1.2.0",
-      "newVersion": "1.2.1",
+      "oldVersion": "1.2.1",
+      "newVersion": "1.2.2",
       "constraints": [
         {
           "impact": "patch",
           "reason": "Appears in changelog section :bug: Bug Fix"
-        },
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
         }
       ],
       "pkgJSONPath": "./package.json"
     }
   },
-  "description": "## Release (2024-08-15)\n\nshould-handle-link 1.2.1 (patch)\n\n#### :bug: Bug Fix\n* `should-handle-link`\n  * [#10](https://github.com/NullVoxPopuli/should-handle-link/pull/10) Support <a> within SVG Documents ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### :house: Internal\n* `should-handle-link`\n  * [#8](https://github.com/NullVoxPopuli/should-handle-link/pull/8) Add CI ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 1\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
+  "description": "## Release (2024-10-16)\n\nshould-handle-link 1.2.2 (patch)\n\n#### :bug: Bug Fix\n* `should-handle-link`\n  * [#11](https://github.com/NullVoxPopuli/should-handle-link/pull/11) Account for the window ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 1\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
 }
