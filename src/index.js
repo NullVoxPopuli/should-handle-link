@@ -7,7 +7,33 @@ export function getAnchor(event) {
    */
   let composedPath = event.composedPath();
 
+  /**
+   * Example 1:
+   * - button
+   * - div
+   * - article
+   * - section
+   * - body
+   * - html
+   * - HTMLDocument
+   * - Window
+   *
+   * Example 2:
+   * - svg
+   * - span
+   * - a  # and the rest is skipped
+   * - article
+   * - section
+   * - body
+   * - html
+   * - HTMLDocument
+   * - Window
+   */
   for (let element of composedPath) {
+    if (!element.nodeName) {
+      return;
+    }
+
     if (element.nodeName.toUpperCase() === 'A') {
       return element;
     }
