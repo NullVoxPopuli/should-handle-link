@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2024-10-16)
+
+should-handle-link 1.2.2 (patch)
+
+#### :bug: Bug Fix
+* `should-handle-link`
+  * [#11](https://github.com/NullVoxPopuli/should-handle-link/pull/11) Account for the window ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### Committers: 1
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
 ## Release (2024-08-15)
 
 should-handle-link 1.2.1 (patch)
