@@ -145,8 +145,12 @@ export function shouldHandle(href, element, event, ignore = []) {
    * We can optionally declare some paths as ignored,
    * or "let the browser do its default thing,
    * because there is other server-based routing to worry about"
+   * 
+   * `ignore` is an array of either:
+   * - string elements representing explicit paths
+   * - RegExp elements to match parts of URL
    */
-  if (ignore.includes(url.pathname)) return false;
+  if (ignore.some((element) => url.pathname.match(element))) return false;
 
   return true;
 }
