@@ -6,7 +6,7 @@ export function shouldHandle(
   href: string,
   element: HTMLAnchorElement,
   event: MouseEvent,
-  ignore?: string[],
+  ignore?: (string | RegExp)[],
 ): boolean;
 
 /**
