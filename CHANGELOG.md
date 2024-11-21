@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2024-11-21)
+
+should-handle-link 1.3.0 (minor)
+
+#### :rocket: Enhancement
+* `should-handle-link`
+  * [#14](https://github.com/NullVoxPopuli/should-handle-link/pull/14) ✨ Allow `ignore` option to accept RegExp ([@fannyvanrell](https://github.com/fannyvanrell))
+
+#### Committers: 1
+- Fanny Van Rell ([@fannyvanrell](https://github.com/fannyvanrell))
+
 ## Release (2024-10-16)
 
 should-handle-link 1.2.2 (patch)

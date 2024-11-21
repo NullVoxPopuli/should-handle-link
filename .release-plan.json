@@ -1,17 +1,17 @@
 {
   "solution": {
     "should-handle-link": {
-      "impact": "patch",
-      "oldVersion": "1.2.1",
-      "newVersion": "1.2.2",
+      "impact": "minor",
+      "oldVersion": "1.2.2",
+      "newVersion": "1.3.0",
       "constraints": [
         {
-          "impact": "patch",
-          "reason": "Appears in changelog section :bug: Bug Fix"
+          "impact": "minor",
+          "reason": "Appears in changelog section :rocket: Enhancement"
         }
       ],
       "pkgJSONPath": "./package.json"
     }
   },
-  "description": "## Release (2024-10-16)\n\nshould-handle-link 1.2.2 (patch)\n\n#### :bug: Bug Fix\n* `should-handle-link`\n  * [#11](https://github.com/NullVoxPopuli/should-handle-link/pull/11) Account for the window ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 1\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
+  "description": "## Release (2024-11-21)\n\nshould-handle-link 1.3.0 (minor)\n\n#### :rocket: Enhancement\n* `should-handle-link`\n  * [#14](https://github.com/NullVoxPopuli/should-handle-link/pull/14) ✨ Allow `ignore` option to accept RegExp ([@fannyvanrell](https://github.com/fannyvanrell))\n\n#### Committers: 1\n- Fanny Van Rell ([@fannyvanrell](https://github.com/fannyvanrell))\n"
 }
